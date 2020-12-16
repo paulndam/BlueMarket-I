@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blue Market</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class= 'grid-container'>
+        <header class="header">
+            <div class="brand">
+                <button onclick="openMenu()">
+                    &#9776;
+                </button>
+                <a href="index.html">Bluemarket</a>
+            </div>
+            <div class="header-links">
+                <a href="cart.html">Shopping cart</a>
+                <a href="signin">Sign up</a>
+            </div>
+            
+        </header>
+
+        <aside class="sidebar">
+            <h3>Shopping Categories</h3>
+            <button class="sidebar-close-btn" onclick="closeMenu()">
+                x
+            </button>
+            <ul>
+                <li>
+                    <a href="index.html">shoes</a>
+                </li>
+                <li>
+                    <a href="index.html">pants</a>
+                </li>
+            </ul>
+        </aside>
+
+
+        
+    </div>
+
+    <main class="main">
+        <div class="content">
+            <ul class="products">
+                <li>
+                    <div class="product">
+                        <img class="product-image" src="/Bluemarket/Images/pic1.jpeg" alt="picture">
+                        <div class="product-name">
+                            <a href="product.html">Shoe space</a>
+                        </div>
+                        <div class="product-brand">Nike</div>
+                        <div class="product-price">$45</div>
+                        <div class="product-rating">4.5 stars (6 reviews)</div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="product">
+                        <img class="product-image" src="/Bluemarket/Images/pic1.jpeg" alt="picture">
+                        <div class="product-name">
+                            <a href="product.html">Shoe space</a>
+                        </div>
+                        <div class="product-brand">Nike</div>
+                        <div class="product-price">$45</div>
+                        <div class="product-rating">4.5 stars (6 reviews)</div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="product">
+                        <img class="product-image" src="/Bluemarket/Images/pic1.jpeg" alt="picture">
+                        <div class="product-name">
+                            <a href="product.html">Shoe space</a>
+                        </div>
+                        <div class="product-brand">Nike</div>
+                        <div class="product-price">$45</div>
+                        <div class="product-rating">4.5 stars (6 reviews)</div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="product">
+                        <img class="product-image" src="/Bluemarket/Images/pic1.jpeg" alt="picture">
+                        <div class="product-name">
+                            <a href="product.html">Shoe space</a>
+                        </div>
+                        <div class="product-brand">Nike</div>
+                        <div class="product-price">$45</div>
+                        <div class="product-rating">4.5 stars (6 reviews)</div>
+                    </div>
+                </li>
+                
+
+                </div>
+            </ul>
+
+        </div>
+        
+    </main>
+
+    <footer class="footer">
+        All rigths reserved
+    </footer>
+
+    <script>
+        function openMenu(){
+            document.querySelector('.sidebar').classList.add('open')
+        }
+
+        function closeMenu() {
+                document.querySelector('.sidebar').classList.remove('open')
+            }
+    </script>
+    
+</body>
+</html>
